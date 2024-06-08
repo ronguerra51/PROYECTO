@@ -70,4 +70,13 @@ class Empleado extends Conexion
         $resultado = $this->ejecutar($sql);
         return $resultado;
     }
+
+    public function eliminar(){
+        // $sql = "DELETE FROM productos WHERE prod_id = $this->prod_id ";
+
+        // echo $sql;
+        $sql = "UPDATE empleado SET empleado_situacion = 0 WHERE empleado_id = $this->empleado_id ";
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
+    }
 }
