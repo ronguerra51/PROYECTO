@@ -41,6 +41,12 @@ class Empleado extends Conexion{
     if($this->empleado_dpi != ''){
         $sql .= " AND empleado_dpi like'%$this->empleado_dpi%' ";
     }
+    if($this->empleado_dpi != ''){
+        $sql .= " AND empleado_edad like'%$this->empleado_edad%' ";
+    }
+    if($this->empleado_dpi != ''){
+        $sql .= " AND empleado_sexo like'%$this->empleado_sexo%' ";
+    }
 
     $resultado = self::servir($sql);
     return $resultado;

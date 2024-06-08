@@ -10,6 +10,8 @@
         // var_dump($_GET);
         $_GET['empleado_nombre'] = htmlspecialchars($_GET['empleado_nombre']);
         $_GET['empleado_dpi'] = htmlspecialchars($_GET['empleado_dpi']);
+        $_GET['empleado_edad'] = htmlspecialchars($_GET['empleado_edad']);
+        $_GET['empleado_sexo'] = htmlspecialchars($_GET['empleado_sexo']);
     
         $objEmpleado = new Empleado($_GET);
         $empleados = $objEmpleado->buscar();
@@ -52,6 +54,8 @@
                         <th>NO.</th>
                         <th>NOMBRE</th>
                         <th>NUMERO DE DPI</th>
+                        <th>EDAD</th>
+                        <th>SEXO</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -61,6 +65,8 @@
                                 <td><?= $key + 1?></td>
                                 <td><?= $empleado['empleado_nombre'] ?></td>
                                 <td><?= $empleado['empleado_dpi'] ?></td>
+                                <td><?= $empleado['empleado_edad'] ?></td>
+                                <td><?= $empleado['empleado_sexo'] ?></td>
                                 <td class="text-center">
                                 <div class="dropdown">
                                     <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
