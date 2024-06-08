@@ -1,12 +1,12 @@
 
 <?php include_once "../templates/navbar.php"; ?>
 <?php include_once "../templates/header.php"; ?>
-<h1 class="text-center">FORMULARIO DE EMPLEADOS</h1>
+<h1 class="text-center">REGISTRAR EMPLEADO</h1>
 <div class="row justify-content-center">
     <form action="../../controladores/empleado/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_nombre">NOMBRE DEL EMPLEADO</label>
+                <label for="cli_nombre">NOMBRE DEL EMPLEADOS</label>
                 <input type="text" name="empleado_nombre" id="empleado_nombre" class="form-control" required>
             </div>
         </div>
