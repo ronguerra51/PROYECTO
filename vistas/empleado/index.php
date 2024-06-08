@@ -30,12 +30,12 @@
         </div>
         <div class="row mb-3">
             <div class="col">
-                <button type="submit" class="btn btn-primary w-100">Guardar</button>
+                <button type="submit" class="btn btn-primary w-100">GUARDAR</button>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <a href="../../controladores/cliente/buscar.php" class="btn btn-info w-100">Buscar</a>
+                <a href="../../vistas/empleado/buscar.php" class="btn btn-info w-100">BUSCAR</a>
             </div>
         </div>
     </form>

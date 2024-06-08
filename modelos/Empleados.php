@@ -1,6 +1,7 @@
 <?php
 require_once 'Conexion.php';
 
+
 class Empleado extends Conexion{
     public $empleado_id;
     public $empleado_nombre;
@@ -26,4 +27,22 @@ class Empleado extends Conexion{
         $resultado = $this->ejecutar($sql);
         return $resultado; 
     }
+
+ // METODO PARA CONSULTAR
+ 
+
+ public function buscar(...$columnas){
+    $cols = count($columnas) > 0 ? implode(',', $columnas) : '*';
+    $sql = "SELECT $cols FROM Empleado where empleado_situacion = 1 ";
+    
+    if($this->empleado_nombre != ''){
+        $sql .= " AND empleado_nombre like '%$this->empleado_nombre%' ";
+    }
+    if($this->empleado_dpi != ''){
+        $sql .= " AND empleado_dpi like'%$this->empleado_dpi%' ";
+    }
+
+    $resultado = self::servir($sql);
+    return $resultado;
+}
 }
