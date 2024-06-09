@@ -6,7 +6,7 @@
     <form action="../../controladores/empleado/guardar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
             <div class="col">
-                <label for="cli_nombre">NOMBRE DEL EMPLEADOS</label>
+                <label for="empleado_nombre">NOMBRE DEL EMPLEADOS</label>
                 <input type="text" name="empleado_nombre" id="empleado_nombre" class="form-control" required>
             </div>
         </div>
