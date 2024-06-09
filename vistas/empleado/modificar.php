@@ -15,7 +15,7 @@
 
 <?php include_once '../templates/header.php'; ?>
 
-<h1 class="text-center">FORMULARIO DE MODIFICACION DE EMPLEADOS</h1>
+<h1 class="text-center mt-5">FORMULARIO DE MODIFICACION DE EMPLEADOS</h1>
 <div class="row justify-content-center">
     <form action="../../controladores/empleado/modificar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         

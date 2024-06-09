@@ -11,7 +11,7 @@
 
 <?php include_once '../templates/header.php'; ?>
 
-<h1 class="text-center">MODIFICAR PUESTOS</h1>
+<h1 class="text-center mt-5">MODIFICAR PUESTOS</h1>
 <div class="row justify-content-center">
     <form action="../../controladores/puesto/modificar.php" method="POST" class="border bg-light shadow rounded p-4 col-lg-6">
         

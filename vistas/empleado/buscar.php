@@ -1,6 +1,6 @@
 <?php include_once '../templates/header.php'; ?>
 
-<h1 class="text-center">BUSCAR EMPLEADOS</h1>
+<h1 class="text-center mt-5">BUSCAR EMPLEADOS</h1>
 <div class="row justify-content-center">
     <form action="../../controladores/empleado/buscar.php" method="GET" class="border bg-light shadow rounded p-4 col-lg-6">
         <div class="row mb-3">
