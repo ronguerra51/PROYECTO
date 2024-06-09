@@ -40,10 +40,11 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="bi bi-people-fill me-2"></i>ASIGNACION DE PUESTOS
+                        <i class="bi bi-people-fill me-2"></i>ASIGNACIONES
                     </a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="../../vistas/asignacion/index.php"><i class="bi bi-person-plus-fill me-2"></i>ASIGNAR PUESTO A EMPLEADO</a></li>
+                        <li><a class="dropdown-item" href="../../vistas/asignacion/area.php"><i class="bi bi-person-plus-fill me-2"></i>ASIGNAR AREA A EMPLEADO</a></li>
                     </ul>
                 </li>
             </ul>
