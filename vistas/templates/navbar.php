@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg custom-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="../../vistas/empleado/index.php">
-        <img src="../../src/images/logo.png" alt="Logo" class="navbar-logo"> "INGESOFT S.A"
+        <img src="../../src/images/empresa.png" width="70" height="70" alt="Logo" class="navbar-logo"> "INGESOFT S.A"
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>

@@ -35,9 +35,9 @@
 
         .custom-navbar .navbar-brand img.navbar-logo {
             margin-right: 1rem;
-            width: 60px;
+            width: 70px;
             /* Imagen más grande */
-            height: 60px;
+            height: 70px;
             /* Imagen más grande */
         }
 
