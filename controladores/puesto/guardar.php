@@ -51,7 +51,7 @@ include_once '../../vistas/templates/header.php'; ?>
 </div>
 <div class="row justify-content-center">
     <div class="col-lg-6">
-        <a href="../../vistas/empleado/index.php" class="btn btn-primary w-100">VOLVER AL FORMULARIO DE REGISTRAR PUESTOS</a>
+        <a href="../../vistas/puesto/index.php" class="btn btn-primary w-100">VOLVER AL FORMULARIO DE REGISTRAR PUESTOS</a>
     </div>
 </div>
 

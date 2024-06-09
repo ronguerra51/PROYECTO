@@ -22,4 +22,35 @@ class Puesto extends Conexion{
         $resultado = $this->ejecutar($sql);
         return $resultado; 
     }
+
+        // METODO PARA CONSULTAR
+
+        public static function buscarTodos(...$columnas){
+            // $cols = '';
+            // if(count($columnas) > 0){
+            //     $cols = implode(',', $columnas) ;
+            // }else{
+            //     $cols = '*';
+            // }
+            $cols = count($columnas) > 0 ? implode(',', $columnas) : '*';
+            $sql = "SELECT $cols FROM Puestos where puesto_situacion = 1 ";
+            $resultado = self::servir($sql);
+            return $resultado;
+        }
+    
+        public function buscar(...$columnas){
+            $cols = count($columnas) > 0 ? implode(',', $columnas) : '*';
+         
+            $sql = "SELECT $cols FROM Puestos where puesto_situacion = 1 ";
+    
+            if($this->puesto_nombre != ''){
+                $sql .= " AND puesto_nombre like '%$this->puesto_nombre%' ";
+            }
+            if($this->puesto_sueldo != ''){
+                $sql .= " AND puesto_sueldo = $this->puesto_sueldo ";
+            }
+    
+            $resultado = self::servir($sql);
+            return $resultado;
+        }
 }
