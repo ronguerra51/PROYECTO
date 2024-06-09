@@ -50,7 +50,7 @@
                     <tr>
                         <th>No.</th>
                         <th>NOMBRE</th>
-                        <th>PRECIO</th>
+                        <th>SUELDO</th>
                         <th>ACCIONES</th>
                     </tr>
                 </thead>

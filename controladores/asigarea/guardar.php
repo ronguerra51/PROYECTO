@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </div>
     <div class="row">
         <div class="col-lg-4">
-            <a href="../../vistas/asignacion/area.php" class="btn btn-info">VOLVER A LA ASIGNACION DE AREAS</a>
+            <a href="../../vistas/asignacionarea/index.php" class="btn btn-info">VOLVER A LA ASIGNACION DE AREAS</a>
         </div>
     </div>
 </div>
