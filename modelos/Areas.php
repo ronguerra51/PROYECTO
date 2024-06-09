@@ -38,4 +38,20 @@ class Area extends Conexion
         $resultado = self::servir($sql);
         return $resultado;
     }
+
+    public function buscarPorId($id){
+     
+        $sql = "SELECT * FROM Areas where area_situacion = 1 and area_id = $id ";
+        $resultado = array_shift( self::servir($sql));
+        // $resultado = self::servir($sql)[0];
+        return $resultado;
+    }
+
+    // METODO PARA MODIFICAR
+    public function modificar()
+    {
+        $sql = "UPDATE Areas SET area_nombre = '$this->area_nombre' WHERE area_id = $this->area_id ";
+        $resultado = $this->ejecutar($sql);
+        return $resultado;
+    }
 }
