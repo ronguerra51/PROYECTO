@@ -74,4 +74,13 @@ class Puesto extends Conexion
         $resultado = $this->ejecutar($sql);
         return $resultado;
     }
+
+    public function eliminar(){
+        // $sql = "DELETE FROM productos WHERE prod_id = $this->prod_id ";
+
+        // echo $sql;
+        $sql = "UPDATE Puestos SET puesto_situacion = 0 WHERE puesto_id = $this->puesto_id ";
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
+    }
 }
