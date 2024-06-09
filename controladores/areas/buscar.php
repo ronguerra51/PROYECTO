@@ -65,8 +65,7 @@
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="../../vistas/areas/modificar.php?area_id=<?= base64_encode($area['area_id'])?>"><i class="bi bi-pencil-square me-2"></i>MODIFICAR</a></li>
-                                        <li><a class="dropdown-item" href="../../controladores/empleado/eliminar.php?empleado_id=<?= base64_encode($empleado['empleado_id'])?>"><i class="bi bi-trash me-2"></i>ELIMINAR</a></li>
-                                        <li><a class="dropdown-item" href="../../controladores/empleado/eliminar.php?cli_id=<?= base64_encode($empleado['cli_id'])?>"><i class="bi bi-trash me-2"></i>Asignar Puesto</a></li>
+                                        <li><a class="dropdown-item" href="../../controladores/areas/eliminar.php?area_id=<?= base64_encode($area['area_id'])?>"><i class="bi bi-trash me-2"></i>ELIMINAR</a></li>
                                     </ul>
                                 </div>
 

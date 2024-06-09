@@ -54,4 +54,13 @@ class Area extends Conexion
         $resultado = $this->ejecutar($sql);
         return $resultado;
     }
+
+    public function eliminar(){
+        // $sql = "DELETE FROM productos WHERE prod_id = $this->prod_id ";
+
+        // echo $sql;
+        $sql = "UPDATE Areas SET area_situacion = 0 WHERE area_id = $this->area_id ";
+        $resultado = $this->ejecutar($sql);
+        return $resultado; 
+    }
 }
