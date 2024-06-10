@@ -63,10 +63,6 @@ try {
                 </div>
             </div>
             <div class="row">
-            <div class="col">
-                <a href="../../controladores/asigarea/buscar.php" class="btn btn-info w-100">BUSCAR</a>
-            </div>
-            
         </form>
     </div>
 </div>

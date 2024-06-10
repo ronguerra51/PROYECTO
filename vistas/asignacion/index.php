@@ -62,11 +62,6 @@ try {
                     <button type="submit" class="btn btn-primary w-100">ASIGNAR</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <a href="../../vistas/asignacion/buscar.php" class="btn btn-info w-100">BUSCAR</a>
-                </div>
-            </div>
         </form>
     </div>
 </div>
