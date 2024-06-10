@@ -3,15 +3,15 @@
 // ini_set('display_startup_errors', '1');
 // error_reporting(E_ALL);
 
-require '../../modelos/Asignacion.php';
+require '../../modelos/Asigarea.php';
 
         // consulta
         try {
             // var_dump($_GET);
-            $empleadoNombre = $_GET['empleado_nombre'] ;
+            $areaNombre = $_GET['area_nombre'] ;
         
-            $objAsignacion = new AsignacionPuestos($_GET);
-            $asignaciones = $objAsignacion->buscarEmpleadosPuestos($empleadoNombre);
+            $objAsignacion = new AsignacionAreas($_GET);
+            $asignaciones = $objAsignacion->buscarEmpleadosAreas($areaNombre);
             $resultado = [
                 'mensaje' => 'Datos encontrados',
                 'datos' => $asignaciones,
@@ -39,7 +39,7 @@ require '../../modelos/Asignacion.php';
         </div>
         <div class="row mb-4 justify-content-center">
             <div class="col-lg-6">
-                <a href="../../vistas/asignacion/buscar.php" class="btn btn-primary w-100">VOLVER A BUSCAR ASIGNACION DE EMPLEADOS A PUESTOS</a>
+                <a href="../../vistas/asignacion/buscar.php" class="btn btn-primary w-100">VOLVER AL FORMULARIO DE AREAS</a>
             </div>
         </div>
         <h1 class="text-center">LISTADO DE ASIGNACIONES</h1>
@@ -50,8 +50,7 @@ require '../../modelos/Asignacion.php';
                         <tr>
                             <th>NO.</th>
                             <th>NOMBRE DEL EMPLEADO</th>
-                            <th>PUESTO</th>
-                            <th>SUELDO</th>
+                            <th>AREA</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -60,8 +59,7 @@ require '../../modelos/Asignacion.php';
                                 <tr>
                                     <td><?= $key + 1?></td>
                                     <td><?= $asignacion['empleado_nombre'] ?></td>
-                                    <td><?= $asignacion['puesto_nombre'] ?></td>
-                                    <td><?= $asignacion['puesto_sueldo'] ?></td>
+                                    <td><?= $asignacion['area_nombre'] ?></td>
                                     <td class="text-center">
                                     <div class="dropdown">
                                         <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -78,7 +76,7 @@ require '../../modelos/Asignacion.php';
                             <?php endforeach ?>
                         <?php else : ?>
                             <tr>
-                                <td colspan="4">NO HAY ASIGNACIONES REGISTRADOS</td>
+                                <td colspan="4">NO HAY ASIGNACIONES REGISTRADAS</td>
                             </tr>  
                         <?php endif ?>
                     </tbody>

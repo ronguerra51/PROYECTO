@@ -17,5 +17,32 @@ class AsignacionAreas extends Conexion {
         $resultado = self::ejecutar($sql);
         return $resultado;
     }
+
+     // Método para consultar empleados y puestos asignados
+     public function buscarEmpleadosAreas($areaNombre)
+     {
+         $sql = "SELECT empleado_nombre, area_nombre
+                 FROM Empleado 
+                 JOIN Areas  ON area_id = area_id
+                 WHERE empleado_situacion = 1";
+ 
+         if ($areaNombre != '') {
+             $areasNombre = strtolower($areaNombre); 
+             $sql .= " AND LOWER(area_nombre) LIKE '%$areasNombre%'";
+         }
+ 
+         $resultado = self::servir($sql);
+ 
+         // var_dump($sql);
+         // exit;
+         return $resultado;
+     }
+ 
+     public function buscarPorId($id)
+     {
+         $sql = "SELECT * FROM Asignacionesareas WHERE asignacionarea_id = $id";
+         $resultado = array_shift(self::servir($sql));
+         return $resultado;
+     }
 }
 ?>
