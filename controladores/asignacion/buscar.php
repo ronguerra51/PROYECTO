@@ -63,17 +63,6 @@ require '../../modelos/Asignacion.php';
                                     <td><?= $asignacion['puesto_nombre'] ?></td>
                                     <td><?= $asignacion['puesto_sueldo'] ?></td>
                                     <td class="text-center">
-                                    <div class="dropdown">
-                                        <button class="btn btn-info dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            ACCIONES
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="../../vistas/asignacion/modificar.php?area_id=<?= base64_encode($area['area_id'])?>"><i class="bi bi-pencil-square me-2"></i>MODIFICAR</a></li>
-                                            <li><a class="dropdown-item" href="../../controladores/areas/eliminar.php?area_id=<?= base64_encode($area['area_id'])?>"><i class="bi bi-trash me-2"></i>ELIMINAR</a></li>
-                                        </ul>
-                                    </div>
-    
-                                    </td>
                                 </tr>
                             <?php endforeach ?>
                         <?php else : ?>

@@ -8,9 +8,6 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../../vistas/empleado/index.php"><i class="bi bi-house-fill me-2 icon-large"></i>INICIO</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-person-lines-fill me-2"></i>EMPLEADOS
@@ -45,6 +42,7 @@
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="../../vistas/asignacion/index.php"><i class="bi bi-person-plus-fill me-2"></i>ASIGNAR PUESTO A EMPLEADO</a></li>
                         <li><a class="dropdown-item" href="../../vistas/asignacionarea/index.php"><i class="bi bi-person-plus-fill me-2"></i>ASIGNAR AREA A EMPLEADO</a></li>
+                        <li><a class="dropdown-item" href="../../controladores/organizacion/buscar.php"><i class="bi bi-person-plus-fill me-2"></i>ORGANIZACION</a></li>
                     </ul>
                 </li>
             </ul>
