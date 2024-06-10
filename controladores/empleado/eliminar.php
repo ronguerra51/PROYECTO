@@ -9,7 +9,7 @@
         
         $eliminar = $empleado->eliminar();
         $resultado = [
-            'mensaje' => 'PRODUCTO ELIMINADO CORRECTAMENTE',
+            'mensaje' => 'EMPLEADO ELIMINADO CORRECTAMENTE',
             'codigo' => 1
         ];
         

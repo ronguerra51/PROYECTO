@@ -12,7 +12,7 @@
         $objPuesto = new Puesto($_GET);
         $puestos = $objPuesto->buscar();
         $resultado = [
-            'mensaje' => 'Datos encontrados',
+            'mensaje' => 'DATOS ENCONTRADOS',
             'datos' => $puestos,
             'codigo' => 1
         ];

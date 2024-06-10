@@ -19,7 +19,7 @@ if ($_POST['puesto_nombre'] == '' || $_POST['puesto_sueldo'] == '' || $_POST['pu
         $puestos = new Puesto($_POST);
         $guardar = $puestos->guardar();
         $resultado = [
-            'mensaje' => 'EMPLEADO INSERTADO CORRECTAMENTE',
+            'mensaje' => 'PUESTO INSERTADO CORRECTAMENTE',
             'codigo' => 1
         ];
     } catch (PDOException $pe) {
