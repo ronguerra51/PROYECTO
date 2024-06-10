@@ -37,9 +37,9 @@ try {
         <form action="../../controladores/asignacion/guardar.php" method="POST" class="col-lg-8 border bg-light p-4 rounded shadow">
             <div class="row mb-4">
                 <div class="col">
-                    <label for="empleado_id" class="form-label">Empleado</label>
+                    <label for="empleado_id" class="form-label">EMPLEADO</label>
                     <select name="empleado_id" id="empleado_id" class="form-select">
-                        <option value="">Seleccione...</option>
+                        <option value="">SELECCIONE...</option>
                         <?php foreach ($empleados as $empleado) : ?>
                             <option value="<?= htmlspecialchars($empleado['empleado_id']) ?>"><?= htmlspecialchars($empleado['empleado_nombre']) ?></option>
                         <?php endforeach ?>
@@ -48,9 +48,9 @@ try {
             </div>
             <div class="row mb-4">
                 <div class="col">
-                    <label for="puesto_id" class="form-label">Puesto</label>
+                    <label for="puesto_id" class="form-label">PUESTO</label>
                     <select name="puesto_id" id="puesto_id" class="form-select">
-                        <option value="">Seleccione...</option>
+                        <option value="">SELECCIONE...</option>
                         <?php foreach ($puestos as $puesto) : ?>
                             <option value="<?= htmlspecialchars($puesto['puesto_id']) ?>"><?= htmlspecialchars($puesto['puesto_nombre']) ?></option>
                         <?php endforeach ?>
@@ -59,12 +59,12 @@ try {
             </div>
             <div class="row mb-4">
                 <div class="col">
-                    <button type="submit" class="btn btn-primary w-100">Asignar</button>
+                    <button type="submit" class="btn btn-primary w-100">ASIGNAR</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <a href="../../vistas/asignacion/buscar.php" class="btn btn-info w-100">Buscar</a>
+                    <a href="../../vistas/asignacion/buscar.php" class="btn btn-info w-100">BUSCAR</a>
                 </div>
             </div>
         </form>
